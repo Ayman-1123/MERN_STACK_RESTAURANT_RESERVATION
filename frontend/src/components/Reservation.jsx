@@ -17,8 +17,9 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/reservation/send",
+        "https://glorious-space-adventure-69gj9q9p76qhpv-3000.app.github.dev/api/v1/reservation/send",
         { firstName, lastName, email, phone, date, time },
+        
         {
           headers: {
             "Content-Type": "application/json",
